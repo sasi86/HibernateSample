@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 5, 2017 9:09:16 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.sasi.practice.Country" table="COUNTRY">
+        <id name="code" type="java.lang.String">
+            <column name="CODE" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="continent">
+            <column name="CONTINENT" />
+            <type name="org.hibernate.type.EnumType">
+                <param name="useNamed">true</param>
+                <param name="enumClass">com.sasi.practice.Continent</param>
+            </type>
+        </property>
+        <property name="region" type="java.lang.String">
+            <column name="REGION" />
+        </property>
+        <property name="surfaceArea" type="float">
+            <column name="SURFACEAREA" />
+        </property>
+        <property name="indepYear" type="short">
+            <column name="INDEPYEAR" />
+        </property>
+        <property name="population" type="int">
+            <column name="POPULATION" />
+        </property>
+        <property name="lifeExpectancy" type="float">
+            <column name="LIFEEXPECTANCY" />
+        </property>
+        <property name="gnp" type="float">
+            <column name="GNP" />
+        </property>
+        <property name="gnpOld" type="float">
+            <column name="GNPOLD" not-null="false"/>
+        </property>
+        <property name="localName" type="java.lang.String">
+            <column name="LOCALNAME" />
+        </property>
+        <property name="governmentForm" type="java.lang.String">
+            <column name="GOVERNMENTFORM" />
+        </property>
+        <property name="headOfState" type="java.lang.String">
+            <column name="HEADOFSTATE" />
+        </property>
+        <property name="capital" type="int">
+            <column name="CAPITAL" />
+        </property>
+        <property name="code2" type="java.lang.String">
+            <column name="CODE2" />
+        </property>
+        <list name="cities" table="CITY" lazy="false">
+            <key>
+                <column name="ID" />
+            </key>
+            <list-index></list-index>
+            <one-to-many class="com.sasi.practice.City" />
+        </list>
+    </class>
+</hibernate-mapping>
