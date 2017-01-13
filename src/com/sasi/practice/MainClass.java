@@ -29,10 +29,9 @@ public class MainClass {
 		
 		System.out.println(c.getName() + " has population of "+ c.getPopulation());
 		System.out.println("Has the following cities"+c.getCities().size());
-		/*for(City c1 : c.getCities()){
+		for(City c1 : c.getCities()){
 			System.out.println(c1.getName());
-		}*/
-		
+		}
 		session.close();
 		
 	}

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Jan 5, 2017 9:09:16 PM by Hibernate Tools 3.5.0.Final -->
+<!-- Generated Jan 13, 2017 3:26:44 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.sasi.practice.City" table="CITY">
         <id name="id" type="int">
             <column name="ID" />
-            <generator class="identity" />
+            <generator class="assigned" />
         </id>
         <property name="name" type="java.lang.String">
             <column name="NAME" />

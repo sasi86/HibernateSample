@@ -1,6 +1,7 @@
 package com.sasi.practice;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class Country {
@@ -20,7 +21,7 @@ public class Country {
 	private int capital;
 	private String code2;
 	
-	private List<City> cities = new ArrayList<City> ();
+	private Collection<City> cities = new ArrayList<> ();
 
 	public String getCode() {
 		return code;
@@ -142,13 +143,15 @@ public class Country {
 		this.code2 = code2;
 	}
 
-	public List<City> getCities() {
+	public Collection<City> getCities() {
 		return cities;
 	}
 
-	public void setCities(List<City> cities) {
+	public void setCities(Collection<City> cities) {
 		this.cities = cities;
 	}
+
+	
 		
 	
 	

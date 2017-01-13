@@ -9,6 +9,7 @@
   <property name="hibernate.connection.username">appuser</property>
   <property name="hibernate.default_schema">world</property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.show_sql">true</property>
   <mapping resource="com/sasi/practice/City.hbm.xml"/>
   <mapping resource="com/sasi/practice/Country.hbm.xml"/>
  </session-factory>

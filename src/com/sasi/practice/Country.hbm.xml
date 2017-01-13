@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Jan 5, 2017 9:09:16 PM by Hibernate Tools 3.5.0.Final -->
+<!-- Generated Jan 13, 2017 3:26:44 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.sasi.practice.Country" table="COUNTRY">
         <id name="code" type="java.lang.String">
@@ -14,14 +14,14 @@
         <property name="continent">
             <column name="CONTINENT" />
             <type name="org.hibernate.type.EnumType">
-                <param name="useNamed">true</param>
+                <param name="type">12</param>
                 <param name="enumClass">com.sasi.practice.Continent</param>
             </type>
         </property>
         <property name="region" type="java.lang.String">
             <column name="REGION" />
         </property>
-        <property name="surfaceArea" type="float">
+        <property name="surfaceArea" type="java.lang.Float">
             <column name="SURFACEAREA" />
         </property>
         <property name="indepYear" type="short">
@@ -30,14 +30,14 @@
         <property name="population" type="int">
             <column name="POPULATION" />
         </property>
-        <property name="lifeExpectancy" type="float">
+        <property name="lifeExpectancy" type="java.lang.Float">
             <column name="LIFEEXPECTANCY" />
         </property>
-        <property name="gnp" type="float">
+        <property name="gnp" type="java.lang.Float">
             <column name="GNP" />
         </property>
-        <property name="gnpOld" type="float">
-            <column name="GNPOLD" not-null="false"/>
+        <property name="gnpOld" type="java.lang.Float">
+            <column name="GNPOLD" />
         </property>
         <property name="localName" type="java.lang.String">
             <column name="LOCALNAME" />
@@ -54,12 +54,11 @@
         <property name="code2" type="java.lang.String">
             <column name="CODE2" />
         </property>
-        <list name="cities" table="CITY" lazy="false">
+        <bag name="cities" table="CITY" inverse="false" lazy="true">
             <key>
-                <column name="ID" />
+                <column name="countryCode" />
             </key>
-            <list-index></list-index>
             <one-to-many class="com.sasi.practice.City" />
-        </list>
+        </bag>
     </class>
 </hibernate-mapping>
