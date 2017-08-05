@@ -18,22 +18,22 @@
 ![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/2.Entity%20Manager.png)
 
 ## Persistance Context
-Managed set entities is called persistance context
+- Managed set entities is called persistance context
 
 ![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/3.Persistance_xml.png)
 
-## Persistance.xml Properties
+## Persistance-xml Properties
 
 ![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/4.props_persistance.png)
 
-## Persistance Unit - Entity Manager Factory -emf
-Named configuration of set of entities
+## Persistance Unit - Entity Manager Factory - emf
+- Named configuration of set of entities
 
 ## Entity
 
-[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/5.Entity%20Mapping.png)
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/5.Entity%20Mapping.png)
 
-[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/6.%20Configuration%20by%20convention.png)
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/6.%20Configuration%20by%20convention.png)
 
 ### Commonly Used Annotations for customizing
 
@@ -48,13 +48,13 @@ Named configuration of set of entities
 - @Transient - Used when the column used is  not mapped with DB table.
 - @Enumerated(EnumType.ORDINAL/STRING) - Stored as a integer in db
 
-[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/7.Customizing%20Entity.png)
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/7.Customizing%20Entity.png)
 
 
 ### XML Mapping
 - Alternatiely XML can be used over annotations. When used both Xml takes precedance over annotation.
-[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/8.XML%20Mapping.png)
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/8.XML%20Mapping.png)
 - Referencing xml mapping in persistance.xml
-[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/9.Refer%20Persistance.png)
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/9.Refer%20Persistance.png)
 
 
