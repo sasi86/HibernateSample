@@ -31,7 +31,11 @@ Named configuration of set of entities
 
 ## Entity
 
-### Commonly Used Annotations
+[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/5.Entity%20Mapping.png)
+
+[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/6.%20Configuration%20by%20convention.png)
+
+### Commonly Used Annotations for customizing
 
 - @Entity - Signifies the pojo as table in db (Pojo name = Table name)
 - @Table - Used when table is different from the pojo name
@@ -43,4 +47,14 @@ Named configuration of set of entities
 - @Temporal(TemporalType.DATE/TIME/TIMESTAMP) - Used on a date field.
 - @Transient - Used when the column used is  not mapped with DB table.
 - @Enumerated(EnumType.ORDINAL/STRING) - Stored as a integer in db
+
+[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/7.Customizing%20Entity.png)
+
+
+### XML Mapping
+- Alternatiely XML can be used over annotations. When used both Xml takes precedance over annotation.
+[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/8.XML%20Mapping.png)
+- Referencing xml mapping in persistance.xml
+[!alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/9.Refer%20Persistance.png)
+
 
