@@ -8,13 +8,23 @@
   - Annotations
   - XML
 - Unit testing
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/1.Managing%20Entities.png)
+
 
 ## Entity Manager
 - Responsible to synchronize entity object with database.
 - Entity Manager obtains the entity and manages the state of the entities, without which entities are considered detached.
 
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/2.Entity%20Manager.png)
+
 ## Persistance Context
 Managed set entities is called persistance context
+
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/3.Persistance_xml.png)
+
+## Persistance.xml Properties
+
+![alt text](https://github.com/sasi86/HibernateSample/blob/master/jpa/jpa_images/4.props_persistance.png)
 
 ## Persistance Unit - Entity Manager Factory -emf
 Named configuration of set of entities
